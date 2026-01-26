@@ -1,0 +1,38 @@
+{
+  "publications": [
+    {
+      "title": "Destabilizing Neurons to Generate Challenging Neural Network Verification Benchmarks",
+      "authors": [
+        "Linhan Li",
+        "ThanhVu Nguyen"
+      ],
+      "venue": "International Conference on Automated Software Engineering (<b>ASE'25</b>)",
+      "thumbnail": "pubs/ASE25/ASE_main-980_poster.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "Code": "https://github.com/dynaroars/relusplitter",
+        "Link": "https://conf.researchr.org/details/ase-2025/ase-2025-papers/51/Destabilizing-Neurons-to-Generate-Challenging-Neural-Network-Verification-Benchmarks",
+        "Paper": "pubs/ASE25/ASE_main-980.pdf",
+        "BibTeX": "pubs/ASE25/ASE_main-980.bib"
+      }
+    },
+    {
+      "title": "COOLer: A Language Support Extension for COOL in VS Code",
+      "authors": [
+        "Linhan Li",
+        "ThanhVu Nguyen"
+      ],
+      "venue": "International Symposium on Software Testing and Analysis - Tool Demo (<b>ISSTA'25</b>) ",
+      "thumbnail": "pubs/ISSTA25/cooler.png",
+      "selected": 1,
+      "award": "",
+      "links": {
+        "Code": "https://github.com/dynaroars/COOL-Language-Support",
+        "Link": "https://dl.acm.org/doi/10.1145/3713081.3731729",
+        "Paper": "pubs/ISSTA25/ISSTA25_demo-28.pdf",
+        "BibTeX": "pubs/ISSTA25/ISSTA25_demo-28.bib"
+      }
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+services:
+  lli-log-htmly:
+    image: lli_htmly
+    container_name: log_lli_debu
+    restart: unless-stopped
+    # Environment variables for your FRP setup (optional but recommended)
+    environment:
+      - TZ=America/New_York
+    volumes:
+      # 1. Mount your HTMLy code (Read-Only for core files)
+      - ./log.lli-debu/www:/var/www/html:rw
+      - ./log.lli-debu/php.ini:/usr/local/etc/php/conf.d/php.ini:ro
+
+      #- ./log.lli-debu/www/content:/var/www/html/content:rw
+      #- ./log.lli-debu/www/config:/var/www/html/config:rw
+      #- ./log.lli-debu/www/cache:/var/www/html/cache:rw
+
+  lli-academic-page:
+    image: httpd:alpine
+    container_name: lli_debu
+    restart: unless-stopped
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - ./lli-debu/www:/usr/local/apache2/htdocs:ro
+
+  lli-frpc:
+    image: frpc_058
+    container_name: frpc_lli_debu
+    environment:
+      - TZ=America/New_York
+    volumes:
+      - ./frpc/frpc.toml:/etc/frp/frpc.toml:ro
+
